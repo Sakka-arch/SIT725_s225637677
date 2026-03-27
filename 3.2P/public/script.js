@@ -14,6 +14,9 @@ fetch('/api/movies')
                             <span class="card-title">${movie.title}</span>
                             <p>Director: ${movie.director}</p>
                         </div>
+                        <div class="card-action">
+                            <a href="#">Watch Info</a>
+                        </div>
                     </div>
                 </div>
             `;

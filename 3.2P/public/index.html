@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Movie App</title>
+    <title>Documentary Explorer</title>
 
     <!-- Materialize -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
@@ -10,16 +10,47 @@
 
 <body>
 
+<!-- NAVBAR -->
 <nav>
-    <div class="nav-wrapper blue">
-        <a href="#" class="brand-logo center">Movie Explorer</a>
+    <div class="nav-wrapper deep-purple">
+        <a href="#" class="brand-logo center">Documentary Explorer</a>
     </div>
 </nav>
 
+<!-- CAROUSEL -->
+<div class="carousel carousel-slider center">
+    <div class="carousel-item white-text" style="background-image: url('images/foundations.jpg'); background-size: cover;">
+        <h2>Rocking the Foundations</h2>
+    </div>
+
+    <div class="carousel-item white-text" style="background-image: url('images/enemy.jpg'); background-size: cover;">
+        <h2>The Enemy Within</h2>
+    </div>
+
+    <div class="carousel-item white-text" style="background-image: url('images/square.jpg'); background-size: cover;">
+        <h2>The Square</h2>
+    </div>
+</div>
+
+<!-- CONTENT -->
 <div class="container">
+    <h4 class="center">Featured Documentaries</h4>
     <div class="row" id="movie-container"></div>
 </div>
 
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="script.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.carousel');
+    M.Carousel.init(elems, {
+        fullWidth: true,
+        indicators: true
+    });
+});
+</script>
+
 </body>
 </html>

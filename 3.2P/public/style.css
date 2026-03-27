@@ -1,0 +1,17 @@
+body {
+    background-color: #121212;
+    color: white;
+}
+
+h4 {
+    margin-top: 40px;
+}
+
+.card {
+    border-radius: 12px;
+}
+
+.carousel .carousel-item h2 {
+    background: rgba(0,0,0,0.6);
+    padding: 10px;
+}
