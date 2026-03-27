@@ -5,36 +5,49 @@
 
     <!-- Materialize -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <!-- NAVBAR -->
-<nav>
-    <div class="nav-wrapper deep-purple">
-        <a href="#" class="brand-logo center">Documentary Explorer</a>
+<nav class="nav-extended transparent z-depth-0">
+    <div class="nav-wrapper container">
+        <a href="#" class="brand-logo">DocuStream</a>
     </div>
 </nav>
 
-<!-- CAROUSEL -->
-<div class="carousel carousel-slider center">
-    <div class="carousel-item white-text" style="background-image: url('images/foundations.jpg'); background-size: cover;">
-        <h2>Rocking the Foundations</h2>
+<!-- HERO CAROUSEL -->
+<div class="carousel carousel-slider">
+    <div class="carousel-item hero hero1">
+        <div class="overlay">
+            <h2>Rocking the Foundations</h2>
+            <p>Exploring radical movements and resistance</p>
+        </div>
     </div>
 
-    <div class="carousel-item white-text" style="background-image: url('images/enemy.jpg'); background-size: cover;">
-        <h2>The Enemy Within</h2>
+    <div class="carousel-item hero hero2">
+        <div class="overlay">
+            <h2>The Enemy Within</h2>
+            <p>A deep dive into power and conflict</p>
+        </div>
     </div>
 
-    <div class="carousel-item white-text" style="background-image: url('images/square.jpg'); background-size: cover;">
-        <h2>The Square</h2>
+    <div class="carousel-item hero hero3">
+        <div class="overlay">
+            <h2>The Square</h2>
+            <p>Revolution, activism, and change</p>
+        </div>
     </div>
 </div>
 
 <!-- CONTENT -->
-<div class="container">
-    <h4 class="center">Featured Documentaries</h4>
+<div class="container section">
+    <h4 class="section-title">Trending Documentaries</h4>
     <div class="row" id="movie-container"></div>
 </div>
 
@@ -44,7 +57,7 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.carousel');
+    const elems = document.querySelectorAll('.carousel');
     M.Carousel.init(elems, {
         fullWidth: true,
         indicators: true

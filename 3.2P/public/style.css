@@ -1,17 +1,86 @@
 body {
-    background-color: #121212;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #0b0b0b;
     color: white;
 }
 
-h4 {
-    margin-top: 40px;
+/* Navbar */
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
 }
 
+.brand-logo {
+    font-weight: 600;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero1 { background-image: url('images/foundations.jpg'); }
+.hero2 { background-image: url('images/enemy.jpg'); }
+.hero3 { background-image: url('images/square.jpg'); }
+
+.overlay {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    max-width: 500px;
+}
+
+.overlay h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.overlay p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+/* Section title */
+.section-title {
+    margin: 40px 0 20px;
+    font-weight: 600;
+}
+
+/* CARD DESIGN */
 .card {
-    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
 }
 
-.carousel .carousel-item h2 {
-    background: rgba(0,0,0,0.6);
-    padding: 10px;
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Image */
+.card-image img {
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Content */
+.card-content {
+    color: white;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+/* Button */
+.card-action a {
+    color: #bb86fc !important;
 }

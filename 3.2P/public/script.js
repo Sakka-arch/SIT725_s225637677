@@ -6,7 +6,7 @@ fetch('/api/movies')
         data.forEach(movie => {
             const card = `
                 <div class="col s12 m4">
-                    <div class="card hoverable">
+                    <div class="card">
                         <div class="card-image">
                             <img src="${movie.image}">
                         </div>
@@ -15,7 +15,7 @@ fetch('/api/movies')
                             <p>Director: ${movie.director}</p>
                         </div>
                         <div class="card-action">
-                            <a href="#">Watch Info</a>
+                            <a href="#">View Details</a>
                         </div>
                     </div>
                 </div>

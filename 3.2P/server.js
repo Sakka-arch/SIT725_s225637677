@@ -1,3 +1,11 @@
+const express = require('express');
+const app = express();
+const PORT = 3000;
+
+// Serve static files
+app.use(express.static('public'));
+
+// API endpoint
 app.get('/api/movies', (req, res) => {
     const movies = [
         {
@@ -18,4 +26,9 @@ app.get('/api/movies', (req, res) => {
     ];
 
     res.json(movies);
+});
+
+// Start server
+app.listen(PORT, () => {
+    console.log(`Server running on http://localhost:${PORT}`);
 });
