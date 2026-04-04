@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Documentary Explorer</title>
+
+    <!-- Materialize -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="nav-extended transparent z-depth-0">
+    <div class="nav-wrapper container">
+        <a href="#" class="brand-logo">DocuStream</a>
+    </div>
+</nav>
+
+<!-- HERO CAROUSEL -->
+<div class="carousel carousel-slider">
+    <div class="carousel-item hero hero1">
+        <div class="overlay">
+            <h2>Rocking the Foundations</h2>
+            <p>Exploring radical movements and resistance</p>
+        </div>
+    </div>
+
+    <div class="carousel-item hero hero2">
+        <div class="overlay">
+            <h2>The Enemy Within</h2>
+            <p>A deep dive into power and conflict</p>
+        </div>
+    </div>
+
+    <div class="carousel-item hero hero3">
+        <div class="overlay">
+            <h2>The Square</h2>
+            <p>Revolution, activism, and change</p>
+        </div>
+    </div>
+</div>
+
+<div class="container section">
+    <h5>Add Documentary</h5>
+
+    <form id="doc-form">
+        <div class="input-field">
+            <input id="title" type="text" required>
+            <label>Title</label>
+        </div>
+
+        <div class="input-field">
+            <input id="director" type="text" required>
+            <label>Director</label>
+        </div>
+
+        <div class="input-field">
+            <input id="category" type="text">
+            <label>Category</label>
+        </div>
+
+        <div class="input-field">
+            <input id="year" type="number">
+            <label>Year</label>
+        </div>
+
+        <div class="input-field">
+            <input id="rating" type="number">
+            <label>Rating</label>
+        </div>
+
+        <div class="input-field">
+            <input id="image" type="text">
+            <label>Image URL</label>
+        </div>
+
+        <button class="btn purple">Add</button>
+    </form>
+</div>
+
+<!-- ORIGINAL CONTENT (UNCHANGED) -->
+<div class="container section">
+    <h4 class="section-title">Trending Documentaries</h4>
+    <div class="row" id="movie-container"></div>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="script.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const elems = document.querySelectorAll('.carousel');
+    M.Carousel.init(elems, {
+        fullWidth: true,
+        indicators: true
+    });
+});
+</script>
+
+</body>
+</html>
