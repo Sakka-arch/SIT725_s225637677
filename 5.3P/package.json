@@ -1,0 +1,20 @@
+{
+  "name": "5.3p",
+  "version": "1.0.0",
+  "description": "SIT725 Project",
+  "main": "seed.js",
+  "scripts": {
+    "start": "node seed.js",
+    "dev": "nodemon seed.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1",
+    "mongoose": "^9.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  }
+}
