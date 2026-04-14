@@ -1,0 +1,22 @@
+{
+  "name": "5.3p",
+  "created by": "s225637677",
+  "version": "1.0.0",
+  "description": "SIT725 Project",
+  "main": "seed.js",
+  "scripts": {
+    "start": "node seed.js",
+    "dev": "nodemon seed.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.15.0",
+    "express": "^5.2.1",
+    "mongoose": "^9.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  }
+}

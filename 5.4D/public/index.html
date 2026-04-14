@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Books Catalog</title>
+</head>
+<body>
+
+<h1>Books Catalog</h1>
+
+<h2>Add Book</h2>
+<form id="book-form">
+    <input placeholder="ID" id="id" required><br>
+    <input placeholder="Title" id="title" required><br>
+    <input placeholder="Author" id="author" required><br>
+    <input placeholder="Year" id="year" required><br>
+    <select id="genre" required>
+    <option value="">Select Genre</option>
+    <option value="fiction">fiction</option>
+    <option value="non-fiction">non-fiction</option>
+    <option value="fantasy">fantasy</option>
+    <option value="history">history</option>
+    <option value="biography">biography</option>
+    <option value="science">science</option>
+    </select>
+    <input placeholder="Summary" id="summary" required><br>
+    <input placeholder="Price" id="price" required><br>
+    <button type="submit">Add Book</button>
+</form>
+
+<hr>
+
+<div id="book-list"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
