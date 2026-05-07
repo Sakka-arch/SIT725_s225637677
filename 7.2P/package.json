@@ -1,0 +1,15 @@
+{
+  "name": "sit725-study-room",
+  "version": "1.0.0",
+  "description": "SIT725 7.2P Socket Programming",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Anirudh Gupta",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "socket.io": "^4.8.1"
+  }
+}

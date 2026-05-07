@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Study Room Socket App</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>📚 Real-Time Study Room</h1>
+
+        <input
+            type="text"
+            id="username"
+            placeholder="Enter username"
+        >
+
+        <div id="messages"></div>
+
+        <p id="typing"></p>
+
+        <input
+            type="text"
+            id="messageInput"
+            placeholder="Type your message"
+        >
+
+        <button onclick="sendMessage()">
+            Send
+        </button>
+
+        <div class="status-buttons">
+
+            <button onclick="sendStatus('Studying')">
+                Studying
+            </button>
+
+            <button onclick="sendStatus('Taking Break')">
+                Taking Break
+            </button>
+
+            <button onclick="sendStatus('Finished Task')">
+                Finished Task
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script src="client.js"></script>
+
+</body>
+
+</html>
